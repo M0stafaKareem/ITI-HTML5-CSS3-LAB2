@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+section,
+div,
+button,
+header,
+ul,
+p {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  letter-spacing: 0.3px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.hero {
+  position: absolute;
+  background-image: url("./assets/img/hero/h1_hero1.jpg.webp");
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+header,
+header .left,
+header .right {
+  gap: 15%;
+}
+
+header .left {
+  flex: 2;
+}
+
+header .right {
+  flex: 1;
+}
+
+header .left .logo,
+header button {
+  flex: 2;
+}
+header nav {
+  flex: 5;
+}
+header nav ul {
+  justify-content: space-between;
+}
+
+.right {
+  justify-content: space-between;
+}
+header nav ul li a,
+header .right p {
+  text-decoration: none;
+  color: white;
+}
+header .right p a {
+  border-bottom: 1.2px dashed gray;
+}
+
+.right button {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  background-color: #f15b45;
+  padding: 1.4vw;
+  font-size: 1vw;
+  text-wrap: nowrap;
+}
+
+.hero-caption {
+  margin: 20vh 10vh;
+  color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vh;
+  width: 35vw;
+}
+.hero-caption h1 {
+  overflow: hidden;
+  font-family: "Jost", sans-serif;
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 4.5vw;
+}
+.hero-caption h2 {
+  font-family: "Rubik";
+  font-weight: 200;
+}
+.hero-caption button {
+  background-color: #549e93;
+  color: white;
+  padding: 1.6vw;
+  font-size: 1.2vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-caption button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.upcomming-program {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10vh 5vw;
+  background-color: #fcf2eb;
+}
+
+.ProgramImage {
+  flex: 4;
+}
+.program-description {
+  flex: 5;
+}
+
+.program-content {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 65%;
+  margin: 0 auto;
+  h2 {
+    font-family: "Jost";
+    color: #263b5c;
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 3.3vw;
+  }
+  h3 {
+    font-weight: 300;
+    color: #777;
+  }
+  .program-title {
+    color: #65c9bb;
+  }
+  .program-actions {
+    width: 100%;
+    gap: 30px;
+  }
+  button {
+    border: 2px solid #f15b45;
+    padding: 1.3vw 1vw;
+    font-size: 1.3vw;
+    flex: 1;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .donateBtn,
+  .viewProgBtn:hover {
+    background-color: #f15b45;
+    color: white;
+    font-weight: 700;
+  }
+
+  .donateBtn:hover,
+  .viewProgBtn {
+    background-color: transparent;
+    color: #f15b45;
+    font-weight: 100;
+  }
+}
+
+.cardsContainer {
+  gap: 2%;
+}
+
+.card,
+.cardText,
+.price,
+.cardContent {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cardContent {
+  padding: 1.5vw;
+  gap: 2.5vh;
+  background-color: #f4f2f1;
+}
+
+.cardText {
+  h2 {
+    color: #263b5c;
+    font-weight: 600;
+    font-size: 1.7vw;
+  }
+  h3 {
+    color: #777;
+    font-weight: 300;
+    line-height: 1.5vw;
+    font-size: 1vw;
+    margin: 2.5vh 0;
+  }
+}
+
+.cardFotter {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .price {
+    gap: 0.5vh;
+    flex: 4;
+    h2 {
+      color: #65c9bb;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+  .cardBtn {
+    background-color: #f15b45;
+    justify-content: center;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 600;
+    flex: 5;
+    padding: 1.5vw 0;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #f15b45;
+  }
+}
+.cardBtn:hover {
+  border: 2px solid #f15b45;
+  background-color: transparent;
+  color: #f15b45;
+}
+
+.bgFixed {
+  background: url("./assets/img/gallery/section-bg1.jpg.webp");
+  position: sticky;
+  flex-direction: column;
+  padding: 5vw 7vw;
+  gap: 5vw;
+}
+
+.bgFixed .heading {
+  flex-direction: column;
+  color: white;
+  h3 {
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 1.5vw;
+  }
+  h2 {
+    font-family: "Jost";
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+}
+
+.bgFixed .content {
+  gap: 10vw;
+  text-align: center;
+}
+
+.bgFixed .card {
+  align-items: center;
+  gap: 3vh;
+  color: white;
+  h2 {
+    font-weight: 600;
+    font-size: 1.7vw;
+  }
+  h3 {
+    font-weight: 300;
+    line-height: 1.5vw;
+    font-size: 1vw;
+  }
+}
+
+.latestBlog {
+  margin: 10vh;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+.latestBlog .card {
+  flex: 4;
+}
+.latestBlog .heading {
+  flex-direction: column;
+  flex: 2;
+  gap: 2vw;
+  padding: 5vh;
+  align-items: flex-start;
+}
+.latestBlog .heading .text {
+  gap: 1vw;
+  align-items: flex-start;
+  flex-direction: column;
+  h3 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #549e93;
+  }
+  h2 {
+    font-family: "Jost";
+    font-size: 3vw;
+    color: #263b5c;
+    font-weight: 500;
+  }
+}
+
+.latestBlog .card .cardFotter .cardBtn {
+  flex: none;
+  padding: 1vh 0;
+  background-color: transparent;
+  color: #f15b45;
+  border-bottom: 2px solid #f15b45;
+  transition: all 0.3s ease-in-out;
+}
+.latestBlog .card .cardFotter .cardBtn:hover {
+  letter-spacing: 2px;
+}
+
+.latestBlog .heading .slider {
+  gap: 0.5vw;
+  button {
+    padding: 1.3vw;
+    background-color: transparent;
+    border: 1px solid rgb(119, 119, 119, 0.4);
+    color: rgb(119, 119, 119, 0.4);
+    font-size: 1.5vw;
+    transition: all 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: #f15b45;
+    color: white;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-family: "Abril Fatface", times, serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a,
+.footer-section h2,
+.footer-bottom p,
+.footer-bottom p a,
+.footer-section p {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-section h2 {
+  color: white;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.footer-section ul li a:hover,
+.footer-bottom p a:hover {
+  color: #fff;
+  transition: all 500ms ease-in-out;
+}
+
+.footer-section form {
+  display: flex;
+}
+
+.footer-section input[type="email"] {
+  background-color: transparent;
+  margin: 2vh 0;
+  padding: 1vw;
+  color: white;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 2552, 255, 0.2);
+}
+
+.footer-section input::placeholder {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  width: 75vw;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+.footer-bottom .social-icons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer div,
+ul {
+  display: block;
+  align-items: flex-start;
+}
